@@ -25,8 +25,7 @@ for file_name in glob.glob("html_files/*.html"):
     Login_ID2.append(i.text.strip())
 
   print(Login_ID2)
-  
-  #scrape_time month & day not working correctly  
+   
   scrape_time = file_name.split('\\')[1].replace(".html", "")
   scrape_time_year = scrape_time[0:4]
   scrape_time_month = scrape_time[4:6]
