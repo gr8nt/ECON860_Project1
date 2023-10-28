@@ -20,7 +20,9 @@ for json_file_name in glob.glob("json_files/*.json"):
 		gh_id = json_data['login']
 		avatar_url = json_data['avatar_url']
 		url = json_data['url']
+		html_url = json_data['html_url']
 		starred_url = json_data['starred_url']
+		repos_url = json_data['repos_url']
 		name = json_data['name']
 		company = json_data['company']
 		blog = json_data['blog']
@@ -38,7 +40,9 @@ for json_file_name in glob.glob("json_files/*.json"):
 		print(gh_id)
 		print(avatar_url)
 		print(url)
+		print(html_url)
 		print(starred_url)
+		print(repos_url)
 		print(name)
 		print(company)
 		print(blog)
@@ -56,7 +60,9 @@ for json_file_name in glob.glob("json_files/*.json"):
 				'gh_id' : gh_id,
 				'avatar_url' : avatar_url,
 				'url' : url,
+				'html_url' : html_url,
 				'starred_url' : starred_url,
+				'repos_url' : repos_url,
 				'name' : name,
 				'company' : company,
 				'blog' : blog,
