@@ -8,7 +8,7 @@
   Runs for 24 hours, scraping every 10 minutes, in order to collect bonus user data (run in EC2). If not seeking bonus data, program can be stopped after first instance.
 
 # run_parse.py
-  Parses only the first html file in html_files directory, since non-bonus data is static. Login ID, Repo Count, Follower Count, Member Since values are saved in parsed_files/dataset.csv (excludes data for duplicate login IDs).
+  Parses only the first html file in html_files directory, since non-bonus data is static. Login ID, Repo Count, Follower Count, Member Since values for Login ID list are saved in parsed_files/dataset.csv (excludes data for duplicate login IDs).
 
 # run_parse_part1_bonus.py
   Parses html_files directory, records bonus users, if applicable, along with date/time(UTC) of occurence. Results then saved in parsed_files/dataset_bonus.csv (creates path if does not exist). 
