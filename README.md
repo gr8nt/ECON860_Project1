@@ -3,7 +3,7 @@
 
 
 # run_requests.py
-  Scrapes http://www.charcoalpaper.com/exams/github/user/dataset and saves in html_files directory (creates path if does not exist).
+  Scrapes http://www.charcoalpaper.com/exams/github/user/dataset and saves as UTC date/time in html_files directory (creates path if does not exist).
   
   Runs for 24 hours, scraping every 10 minutes, in order to collect bonus user data (run in EC2). If not seeking bonus data, program can be stopped after first instance.
 
