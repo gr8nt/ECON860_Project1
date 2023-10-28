@@ -53,4 +53,4 @@ dataset = pandas.DataFrame(
    'Member_Since': Member_Since
   })
 
-dataset.drop_duplicates().to_csv("parsed_files/dataset2.csv", index=False)
+dataset.drop_duplicates().to_csv("parsed_files/dataset.csv", index=False)
