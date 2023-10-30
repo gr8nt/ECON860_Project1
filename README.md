@@ -44,6 +44,8 @@
 
   This is the final dataset and it is saved as parsed_files/API_dataset_with_starred_pinned_repo.csv
 
+  It is included in this repository's files for reference.
+
 
 
 
