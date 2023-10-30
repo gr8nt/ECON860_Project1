@@ -11,4 +11,5 @@ sns.scatterplot(x='public_repos', y='followers', data=df)
 
 # plt.xticks(np.arange(0, 600, 150))
 
+plt.xlim(0, 600)
 plt.show()
