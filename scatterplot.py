@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-df = pd.read_csv('parsed_files/API_dataset.csv')
+df = pd.read_csv('parsed_files/API_dataset_with_starred_pinned_repo.csv')
 df.head()
 
 plt.figure(figsize=(12,4), dpi=200)
