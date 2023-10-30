@@ -1,4 +1,4 @@
-# Part 1
+# Part 1 / Bonus
 
 
 
@@ -17,7 +17,7 @@
 
 
 
-# Part 2
+# Part 2 / Bonus
 
 
 
@@ -28,6 +28,21 @@
   Parses json_files directory, saves select user attributes from github API for list of users into parsed_files/API_dataset.csv
 
   Skips invalid user IDs (json = {"message": "Not Found", "documentation_url": "https://docs.github.com/rest/users/users#get-a-user"})
+
+# run_requests_github_html.py 
+  Scrapes github html for list of valid user IDs in API_dataset.csv. Saves html for each user in github_html_files directory (creates path if does not exist).
+  
+  The github html must be scraped in addition to the API because the API does not contain data on number of stars, or additional public repo data for the part 2 bonus.
+
+# run_parse_github_html.py
+  Parses github_html_files directory, saves number of stars from github html for list of users into parsed_files/starred_pinned_repo_dataset.csv
+
+  Bonus: Also parses for the name of the first pinned repository github displays for each user and saves to the same dataset.
+
+# combine_API_starred_pinned_repo_datasets.py
+  Merges API_dataset with starred_pinned_repo_dataset
+
+  This is the final dataset and it is saved as parsed_files/API_dataset_with_starred_pinned_repo.csv
 
 
 
